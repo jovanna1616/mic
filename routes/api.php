@@ -26,3 +26,4 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function($router) {
     Route::post('me', 'AuthController@me');
     Route::post('register', 'AuthController@register');
 });
+Route::resource('shifts', 'ShiftController');
